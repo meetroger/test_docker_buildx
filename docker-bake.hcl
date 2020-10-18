@@ -9,5 +9,5 @@ target "multiarch" {
 
 target "hello" {
     inherits = ["multiarch"]
-    tags = ["hello:latest"]
+    tags = ["meetroger/hello:latest"]
 }
