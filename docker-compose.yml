@@ -2,5 +2,5 @@ version: '3'
 
 services:
   hello:
-    image: hello:latest
+    image: meetroger/hello:latest
     container_name: hello
