@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  hello:
+    build:
+      context: hello
+      args:
+        APK_SOURCE: "mirrors.tuna.tsinghua.edu.cn"
+        # APK_SOURCE: "dl-cdn.alpinelinux.org"
