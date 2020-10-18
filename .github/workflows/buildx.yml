@@ -21,11 +21,13 @@ jobs:
         uses: docker/setup-buildx-action@v1
         with:
           version: latest
+          install: true
       -
         name: Available platforms
         run: echo ${{ steps.buildx.outputs.platforms }}
       -
         name: Build
         run: |
-          ./run build
+          ./build
+          # ./run build
           # docker build . # will run buildx

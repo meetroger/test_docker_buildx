@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+docker buildx bake \
+    -f docker-compose.yml \
+    -f docker-compose.build.yml \
+    -f docker-bake.hcl \
+    --push
