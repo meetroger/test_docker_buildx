@@ -2,5 +2,5 @@ version: '3'
 
 services:
   hello:
-    # image: ${REGISTRYHOST}/hello:${TAG}
+    image: hello:latest
     container_name: hello
