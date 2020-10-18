@@ -24,3 +24,8 @@ jobs:
       -
         name: Available platforms
         run: echo ${{ steps.buildx.outputs.platforms }}
+      -
+        name: Build
+        run: |
+          ./run build
+          # docker build . # will run buildx
